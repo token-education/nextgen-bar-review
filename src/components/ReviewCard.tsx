@@ -2,52 +2,18 @@
 
 import { useState } from "react";
 import { CheckCircle2, RotateCw } from "lucide-react";
+import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
 import { Topic } from "@/types";
 import styles from "./ReviewCard.module.css";
 import clsx from "clsx";
 
 interface ReviewCardProps {
   topic: Topic;
-  onToggleMastered?: (id: number) => void;
+  onReview?: (id: number, quality: number) => void;
 }
 
-const renderText = (text: string) => {
-  if (!text) return null;
-  // Replace literal '\n' and actual newlines, and split by them
-  const lines = text.split(/\\n|\n/);
-  
-  const formattedLines = lines.map((line, idx) => {
-    const trimmed = line.trim();
-    if (trimmed.startsWith('•') || trimmed.startsWith('-')) {
-      return <li key={idx} className={styles.bullet}>{trimmed.substring(1).trim()}</li>;
-    }
-    if (trimmed.length > 0) {
-      return <p key={idx} className={styles.paragraph}>{trimmed}</p>;
-    }
-    return null;
-  }).filter(Boolean);
-
-  // Check if we have bullets
-  const hasBullets = lines.some(l => l.trim().startsWith('•') || l.trim().startsWith('-'));
-  
-  if (hasBullets) {
-    return (
-      <div className={styles.formattedContent}>
-        {formattedLines.map((el, i) => {
-          if (el?.type === 'li') {
-             // group lis? For simplicity, we just render them
-             return <ul key={i} className={styles.list}>{el}</ul>;
-          }
-          return el;
-        })}
-      </div>
-    );
-  }
-
-  return <div className={styles.formattedContent}>{formattedLines}</div>;
-};
-
-export default function ReviewCard({ topic, onToggleMastered }: ReviewCardProps) {
+export default function ReviewCard({ topic, onReview }: ReviewCardProps) {
   const [isFlipped, setIsFlipped] = useState(false);
 
   return (
@@ -67,7 +33,7 @@ export default function ReviewCard({ topic, onToggleMastered }: ReviewCardProps)
             <span className={styles.subjectBadge}>{topic.subject}</span>
           </div>
           <div className={styles.cardBodyCenter}>
-            <h3 className={styles.title}>{topic.rule}</h3>
+            <h3 className={styles.title}>{topic.question || topic.rule}</h3>
           </div>
           <div className={styles.cardFooter}>
             <div className={styles.flipHint}>
@@ -85,11 +51,19 @@ export default function ReviewCard({ topic, onToggleMastered }: ReviewCardProps)
           >
             <div className={styles.section}>
               <div className={styles.label}>Trigger Facts / When It Applies</div>
-              {renderText(topic.trigger)}
+              <div className={styles.formattedContent}>
+                <ReactMarkdown remarkPlugins={[remarkGfm]}>
+                  {topic.trigger}
+                </ReactMarkdown>
+              </div>
             </div>
             <div className={styles.section}>
               <div className={styles.label}>What You Need to Know</div>
-              {renderText(topic.notes)}
+              <div className={styles.formattedContent}>
+                <ReactMarkdown remarkPlugins={[remarkGfm]}>
+                  {topic.notes}
+                </ReactMarkdown>
+              </div>
             </div>
           </div>
 
@@ -98,18 +72,27 @@ export default function ReviewCard({ topic, onToggleMastered }: ReviewCardProps)
               <RotateCw size={16} />
               <span>Tap to flip back</span>
             </div>
-            <button 
-              className={clsx(styles.btnMastered, {
-                [styles.active]: topic.mastered
-              })}
-              onClick={(e) => {
-                e.stopPropagation();
-                if (onToggleMastered) onToggleMastered(topic.id);
-              }}
-            >
-              <CheckCircle2 size={16} />
-              {topic.mastered ? "Mastered" : "Mark as Mastered"}
-            </button>
+            <div className={styles.buttonGroup} style={{display: 'flex', gap: '0.5rem'}}>
+              <button 
+                className={clsx(styles.btnReview, styles.btnNeedsReview)}
+                onClick={(e) => {
+                  e.stopPropagation();
+                  if (onReview) onReview(topic.id, 2);
+                }}
+              >
+                Needs Review
+              </button>
+              <button 
+                className={clsx(styles.btnReview, styles.btnMastered)}
+                onClick={(e) => {
+                  e.stopPropagation();
+                  if (onReview) onReview(topic.id, 5);
+                }}
+              >
+                <CheckCircle2 size={16} />
+                Mastered
+              </button>
+            </div>
           </div>
         </div>
       </div>

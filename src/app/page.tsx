@@ -1,12 +1,12 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Header from "@/components/Header";
 import ReviewCard from "@/components/ReviewCard";
 import { initialData } from "@/data/mockTopics";
 import ChatTutor from "@/components/ChatTutor";
 import { Search, Filter, Bot, ChevronDown, ChevronRight } from "lucide-react";
-import { Topic } from "@/types";
+import { Topic, UserProgress } from "@/types";
 import styles from "./page.module.css";
 
 const parseSubject = (fullSubject: string) => {
@@ -21,11 +21,23 @@ export default function Home() {
   const [topics, setTopics] = useState(initialData);
   const [searchQuery, setSearchQuery] = useState("");
   const [isChatOpen, setIsChatOpen] = useState(false);
-  const [collapsedSubjects, setCollapsedSubjects] = useState<Record<string, boolean>>({});
+  const [expandedSubjects, setExpandedSubjects] = useState<Record<string, boolean>>({});
+  const [currentFilter, setCurrentFilter] = useState("Daily Deck");
+  const [progress, setProgress] = useState<Record<number, UserProgress>>({});
 
-  const [currentFilter, setCurrentFilter] = useState("All Subjects");
+  // Load progress on mount
+  useEffect(() => {
+    const saved = localStorage.getItem("barExamProgress");
+    if (saved) {
+      try {
+        setProgress(JSON.parse(saved));
+      } catch (e) {
+        console.error("Failed to parse progress", e);
+      }
+    }
+  }, []);
 
-  const uniqueSubjects = ["All Subjects", ...Array.from(new Set(topics.map(t => parseSubject(t.subject).main)))].sort();
+  const uniqueSubjects = ["Daily Deck", "All Subjects", ...Array.from(new Set(topics.map(t => parseSubject(t.subject).main)))].sort();
 
   const unmasteredTopics = topics.filter(t => !t.mastered);
 
@@ -37,17 +49,63 @@ export default function Home() {
       (t.trigger && t.trigger.toLowerCase().includes(query)) ||
       (t.notes && t.notes.toLowerCase().includes(query));
       
-    const matchesFilter = currentFilter === "All Subjects" || parseSubject(t.subject).main === currentFilter;
+    let matchesFilter = true;
+    if (currentFilter === "Daily Deck") {
+      const p = progress[t.id];
+      if (!p) {
+        matchesFilter = true; // New cards are due
+      } else {
+        matchesFilter = new Date(p.nextReviewDate) <= new Date();
+      }
+    } else if (currentFilter !== "All Subjects") {
+      matchesFilter = parseSubject(t.subject).main === currentFilter;
+    }
     
     return matchesSearch && matchesFilter;
   });
 
-  const handleToggleMastered = (id: number) => {
-    setTopics(topics.map(t => t.id === id ? { ...t, mastered: !t.mastered } : t));
+  const handleReview = (id: number, quality: number) => {
+    setProgress(prev => {
+      const current = prev[id] || { interval: 0, repetition: 0, efactor: 2.5, nextReviewDate: new Date().toISOString() };
+      let { interval, repetition, efactor } = current;
+
+      if (quality >= 3) {
+        if (repetition === 0) {
+          interval = 1;
+        } else if (repetition === 1) {
+          interval = 6;
+        } else {
+          interval = Math.round(interval * efactor);
+        }
+        repetition += 1;
+      } else {
+        repetition = 0;
+        interval = 1;
+      }
+
+      efactor = efactor + (0.1 - (5 - quality) * (0.08 + (5 - quality) * 0.02));
+      if (efactor < 1.3) efactor = 1.3;
+
+      const nextReview = new Date();
+      nextReview.setDate(nextReview.getDate() + interval);
+
+      const newState = {
+        ...prev,
+        [id]: {
+          interval,
+          repetition,
+          efactor,
+          nextReviewDate: nextReview.toISOString()
+        }
+      };
+      
+      localStorage.setItem("barExamProgress", JSON.stringify(newState));
+      return newState;
+    });
   };
 
   const toggleSubject = (subject: string) => {
-    setCollapsedSubjects(prev => ({
+    setExpandedSubjects(prev => ({
       ...prev,
       [subject]: !prev[subject]
     }));
@@ -101,19 +159,19 @@ export default function Home() {
 
         <section className={styles.topicsSection}>
           {Object.entries(groupedTopics).map(([mainSubject, subGroups]) => {
-            const isCollapsed = collapsedSubjects[mainSubject];
+            const isExpanded = expandedSubjects[mainSubject];
             return (
               <div key={mainSubject} className={styles.mainSubjectGroup}>
                 <button 
                   className={styles.mainSubjectHeading}
                   onClick={() => toggleSubject(mainSubject)}
-                  aria-expanded={!isCollapsed}
+                  aria-expanded={isExpanded}
                 >
                   {mainSubject}
-                  {isCollapsed ? <ChevronRight size={24} /> : <ChevronDown size={24} />}
+                  {isExpanded ? <ChevronDown size={24} /> : <ChevronRight size={24} />}
                 </button>
                 
-                {!isCollapsed && (
+                {isExpanded && (
                   <div className={styles.subGroupsContainer}>
                     {Object.entries(subGroups).map(([subSubject, subjectTopics]) => (
                       <div key={subSubject} className={styles.subSubjectGroup}>
@@ -124,8 +182,8 @@ export default function Home() {
                           {subjectTopics.map(topic => (
                             <ReviewCard 
                               key={topic.id} 
-                              topic={topic} 
-                              onToggleMastered={handleToggleMastered}
+                              topic={{...topic, mastered: progress[topic.id]?.repetition > 2 }} 
+                              onReview={handleReview}
                             />
                           ))}
                         </div>

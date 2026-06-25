@@ -186,10 +186,8 @@
   border-top: 1px solid var(--border-color);
 }
 
-.btnMastered {
+.btnReview {
   background: transparent;
-  color: var(--text-muted);
-  border: 1px solid var(--border-color);
   padding: 0.5rem 1rem;
   border-radius: var(--radius-full);
   font-size: 0.85rem;
@@ -199,6 +197,21 @@
   align-items: center;
   gap: 0.5rem;
   cursor: pointer;
+}
+
+.btnNeedsReview {
+  color: hsl(0, 70%, 60%);
+  border: 1px solid hsla(0, 70%, 60%, 0.3);
+}
+
+.btnNeedsReview:hover {
+  background: hsla(0, 70%, 60%, 0.1);
+  border-color: hsl(0, 70%, 60%);
+}
+
+.btnMastered {
+  color: var(--text-muted);
+  border: 1px solid var(--border-color);
 }
 
 .btnMastered:hover {
