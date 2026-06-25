@@ -5,7 +5,7 @@ import Header from "@/components/Header";
 import ReviewCard from "@/components/ReviewCard";
 import { initialData } from "@/data/mockTopics";
 import ChatTutor from "@/components/ChatTutor";
-import { Search, Filter, Bot } from "lucide-react";
+import { Search, Filter, Bot, ChevronDown, ChevronRight } from "lucide-react";
 import { Topic } from "@/types";
 import styles from "./page.module.css";
 
@@ -21,6 +21,7 @@ export default function Home() {
   const [topics, setTopics] = useState(initialData);
   const [searchQuery, setSearchQuery] = useState("");
   const [isChatOpen, setIsChatOpen] = useState(false);
+  const [collapsedSubjects, setCollapsedSubjects] = useState<Record<string, boolean>>({});
 
   const [currentFilter, setCurrentFilter] = useState("All Subjects");
 
@@ -43,6 +44,13 @@ export default function Home() {
 
   const handleToggleMastered = (id: number) => {
     setTopics(topics.map(t => t.id === id ? { ...t, mastered: !t.mastered } : t));
+  };
+
+  const toggleSubject = (subject: string) => {
+    setCollapsedSubjects(prev => ({
+      ...prev,
+      [subject]: !prev[subject]
+    }));
   };
 
   // Group by Main Subject -> Sub Subject
@@ -92,28 +100,42 @@ export default function Home() {
         </section>
 
         <section className={styles.topicsSection}>
-          {Object.entries(groupedTopics).map(([mainSubject, subGroups]) => (
-            <div key={mainSubject} className={styles.mainSubjectGroup}>
-              <h2 className={styles.mainSubjectHeading}>{mainSubject}</h2>
-              
-              {Object.entries(subGroups).map(([subSubject, subjectTopics]) => (
-                <div key={subSubject} className={styles.subSubjectGroup}>
-                  {subSubject !== 'General' && (
-                    <h3 className={styles.subSubjectHeading}>{subSubject}</h3>
-                  )}
-                  <div className={styles.grid}>
-                    {subjectTopics.map(topic => (
-                      <ReviewCard 
-                        key={topic.id} 
-                        topic={topic} 
-                        onToggleMastered={handleToggleMastered}
-                      />
+          {Object.entries(groupedTopics).map(([mainSubject, subGroups]) => {
+            const isCollapsed = collapsedSubjects[mainSubject];
+            return (
+              <div key={mainSubject} className={styles.mainSubjectGroup}>
+                <button 
+                  className={styles.mainSubjectHeading}
+                  onClick={() => toggleSubject(mainSubject)}
+                  aria-expanded={!isCollapsed}
+                >
+                  {mainSubject}
+                  {isCollapsed ? <ChevronRight size={24} /> : <ChevronDown size={24} />}
+                </button>
+                
+                {!isCollapsed && (
+                  <div className={styles.subGroupsContainer}>
+                    {Object.entries(subGroups).map(([subSubject, subjectTopics]) => (
+                      <div key={subSubject} className={styles.subSubjectGroup}>
+                        {subSubject !== 'General' && (
+                          <h3 className={styles.subSubjectHeading}>{subSubject}</h3>
+                        )}
+                        <div className={styles.grid}>
+                          {subjectTopics.map(topic => (
+                            <ReviewCard 
+                              key={topic.id} 
+                              topic={topic} 
+                              onToggleMastered={handleToggleMastered}
+                            />
+                          ))}
+                        </div>
+                      </div>
                     ))}
                   </div>
-                </div>
-              ))}
-            </div>
-          ))}
+                )}
+              </div>
+            );
+          })}
 
           {filteredTopics.length === 0 && (
             <div className={styles.emptyState}>

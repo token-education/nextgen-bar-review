@@ -105,12 +105,35 @@
 }
 
 .mainSubjectHeading {
+  font-family: inherit;
   font-size: 2rem;
   color: var(--text-primary);
-  padding-bottom: 0.5rem;
+  padding: 0.5rem 0;
   border-bottom: 2px solid var(--accent-primary);
   font-weight: 700;
   letter-spacing: -0.02em;
+  background: transparent;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  text-align: left;
+  transition: opacity 0.2s;
+}
+
+.mainSubjectHeading:hover {
+  opacity: 0.8;
+}
+
+.subGroupsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 2rem;
 }
 
 .subSubjectGroup {
