@@ -1,0 +1,746 @@
+[
+  {
+    "category": "Business Associations",
+    "sub_topic_module_tag": "Agency & Authority",
+    "core_pure_recall_doctrine": "Agency Creation (Consent, Control, Capacity Rules)",
+    "database_sync_token": "REC-BUSI-AGENCYAU"
+  },
+  {
+    "category": "Business Associations",
+    "sub_topic_module_tag": "Agency & Authority",
+    "core_pure_recall_doctrine": "Actual Authority (Express and Implied Frameworks)",
+    "database_sync_token": "REC-BUSI-AGENCYAU"
+  },
+  {
+    "category": "Business Associations",
+    "sub_topic_module_tag": "Agency & Authority",
+    "core_pure_recall_doctrine": "Apparent Authority (Principal Manifestations to Third Parties)",
+    "database_sync_token": "REC-BUSI-AGENCYAU"
+  },
+  {
+    "category": "Business Associations",
+    "sub_topic_module_tag": "Agency & Authority",
+    "core_pure_recall_doctrine": "Agent's Fiduciary Duty of Care to Principal",
+    "database_sync_token": "REC-BUSI-AGENCYAU"
+  },
+  {
+    "category": "Business Associations",
+    "sub_topic_module_tag": "Agency & Authority",
+    "core_pure_recall_doctrine": "Agent's Fiduciary Duty of Loyalty to Principal",
+    "database_sync_token": "REC-BUSI-AGENCYAU"
+  },
+  {
+    "category": "Business Associations",
+    "sub_topic_module_tag": "Agency & Authority",
+    "core_pure_recall_doctrine": "Termination of Agency Relationships",
+    "database_sync_token": "REC-BUSI-AGENCYAU"
+  },
+  {
+    "category": "Business Associations",
+    "sub_topic_module_tag": "Vicarious Liability",
+    "core_pure_recall_doctrine": "Principal's Vicarious Liability (Respondeat Superior & Joint Venture Rules)",
+    "database_sync_token": "REC-BUSI-VICARIOU"
+  },
+  {
+    "category": "Business Associations",
+    "sub_topic_module_tag": "Fiduciary Duties",
+    "core_pure_recall_doctrine": "Fiduciary Duties of Corporate Officers and Directors",
+    "database_sync_token": "REC-BUSI-FIDUCIAR"
+  },
+  {
+    "category": "Business Associations",
+    "sub_topic_module_tag": "Fiduciary Duties",
+    "core_pure_recall_doctrine": "Fiduciary Duties of LLC Members and Managers",
+    "database_sync_token": "REC-BUSI-FIDUCIAR"
+  },
+  {
+    "category": "Business Associations",
+    "sub_topic_module_tag": "Veil Piercing",
+    "core_pure_recall_doctrine": "Piercing the Corporate/LLC Veil (Alter Ego & Undercapitalization Limits)",
+    "database_sync_token": "REC-BUSI-VEILPIER"
+  },
+  {
+    "category": "Civil Procedure",
+    "sub_topic_module_tag": "Federal Jurisdiction",
+    "core_pure_recall_doctrine": "Subject-Matter Jurisdiction: Federal Question (Well-Pleaded Complaint Rule)",
+    "database_sync_token": "REC-CIVI-FEDERALJ"
+  },
+  {
+    "category": "Civil Procedure",
+    "sub_topic_module_tag": "Federal Jurisdiction",
+    "core_pure_recall_doctrine": "Subject-Matter Jurisdiction: Diversity Jurisdiction (Citizenship & Aggregation Rules)",
+    "database_sync_token": "REC-CIVI-FEDERALJ"
+  },
+  {
+    "category": "Civil Procedure",
+    "sub_topic_module_tag": "Federal Jurisdiction",
+    "core_pure_recall_doctrine": "Concurrent and Removal Jurisdiction (Removability & Remand Protocols)",
+    "database_sync_token": "REC-CIVI-FEDERALJ"
+  },
+  {
+    "category": "Civil Procedure",
+    "sub_topic_module_tag": "Personal Jurisdiction",
+    "core_pure_recall_doctrine": "Personal Jurisdiction Standards (Specific, General, and Minimum Contacts)",
+    "database_sync_token": "REC-CIVI-PERSONAL"
+  },
+  {
+    "category": "Civil Procedure",
+    "sub_topic_module_tag": "Pretrial Procedures",
+    "core_pure_recall_doctrine": "Pleadings and Amended Pleadings (Relation-Back Doctrine under Rule 15)",
+    "database_sync_token": "REC-CIVI-PRETRIAL"
+  },
+  {
+    "category": "Civil Procedure",
+    "sub_topic_module_tag": "Pretrial Joinder",
+    "core_pure_recall_doctrine": "Joinder Rules (Claims, Parties, Counterclaims, Crossclaims, Third-Party Impleader, & Severance)",
+    "database_sync_token": "REC-CIVI-PRETRIAL"
+  },
+  {
+    "category": "Civil Procedure",
+    "sub_topic_module_tag": "Discovery Framework",
+    "core_pure_recall_doctrine": "Scope and Limits of Discovery (Relevance & Proportionality Standards)",
+    "database_sync_token": "REC-CIVI-DISCOVER"
+  },
+  {
+    "category": "Civil Procedure",
+    "sub_topic_module_tag": "Discovery Framework",
+    "core_pure_recall_doctrine": "Rule 26(f) Conference and Discovery Planning Obligations",
+    "database_sync_token": "REC-CIVI-DISCOVER"
+  },
+  {
+    "category": "Civil Procedure",
+    "sub_topic_module_tag": "Discovery Framework",
+    "core_pure_recall_doctrine": "Discovery Tools and Mechanisms (Depositions, Interrogatories, Production, E-Discovery)",
+    "database_sync_token": "REC-CIVI-DISCOVER"
+  },
+  {
+    "category": "Civil Procedure",
+    "sub_topic_module_tag": "Dispositive Motions",
+    "core_pure_recall_doctrine": "Rule 12 Motion to Dismiss (Timing, Procedures, and Defenses for Failure to State a Claim)",
+    "database_sync_token": "REC-CIVI-DISPOSIT"
+  },
+  {
+    "category": "Civil Procedure",
+    "sub_topic_module_tag": "Dispositive Motions",
+    "core_pure_recall_doctrine": "Rule 56 Summary Judgment Motion (Standards, Timing, and Conversions)",
+    "database_sync_token": "REC-CIVI-DISPOSIT"
+  },
+  {
+    "category": "Civil Procedure",
+    "sub_topic_module_tag": "Judgments",
+    "core_pure_recall_doctrine": "Entry of Default and Default Judgment (Rule 55 Framework)",
+    "database_sync_token": "REC-CIVI-JUDGMENT"
+  },
+  {
+    "category": "Civil Procedure",
+    "sub_topic_module_tag": "Judgments",
+    "core_pure_recall_doctrine": "Effect of Judgment (Elements of Claim Preclusion / Res Judicata & Issue Preclusion)",
+    "database_sync_token": "REC-CIVI-JUDGMENT"
+  },
+  {
+    "category": "Constitutional Law",
+    "sub_topic_module_tag": "Federal Judicial Power",
+    "core_pure_recall_doctrine": "Justiciability Requirements: Case or Controversy and Article III Standing Elements",
+    "database_sync_token": "REC-CONS-FEDERALJ"
+  },
+  {
+    "category": "Constitutional Law",
+    "sub_topic_module_tag": "Federal Judicial Power",
+    "core_pure_recall_doctrine": "Other Justiciability Doctrines: Ripeness, Mootness, and Advisory Opinions Ban",
+    "database_sync_token": "REC-CONS-FEDERALJ"
+  },
+  {
+    "category": "Constitutional Law",
+    "sub_topic_module_tag": "Legislative Powers",
+    "core_pure_recall_doctrine": "Congress's Legislative Powers: Commerce Clause, Taxing, and Spending Powers",
+    "database_sync_token": "REC-CONS-LEGISLAT"
+  },
+  {
+    "category": "Constitutional Law",
+    "sub_topic_module_tag": "Federalism Limits",
+    "core_pure_recall_doctrine": "Supremacy Clause and Preemption (Express vs. Implied / Conflict / Field Preemption)",
+    "database_sync_token": "REC-CONS-FEDERALI"
+  },
+  {
+    "category": "Constitutional Law",
+    "sub_topic_module_tag": "Individual Rights",
+    "core_pure_recall_doctrine": "Procedural Due Process Requirements (Notice, Hearing, Right to Process in Administrative Hearings)",
+    "database_sync_token": "REC-CONS-INDIVIDU"
+  },
+  {
+    "category": "Constitutional Law",
+    "sub_topic_module_tag": "Equal Protection",
+    "core_pure_recall_doctrine": "Equal Protection: Classifications Subject to Strict Scrutiny (Suspect Classes / Fundamental Rights)",
+    "database_sync_token": "REC-CONS-EQUALPRO"
+  },
+  {
+    "category": "Constitutional Law",
+    "sub_topic_module_tag": "Equal Protection",
+    "core_pure_recall_doctrine": "Equal Protection: Classifications Subject to Intermediate Scrutiny (Quasi-Suspect Classes / Gender)",
+    "database_sync_token": "REC-CONS-EQUALPRO"
+  },
+  {
+    "category": "Constitutional Law",
+    "sub_topic_module_tag": "Equal Protection",
+    "core_pure_recall_doctrine": "Equal Protection: Classifications Subject to Rational Basis Review & Legislative Deference",
+    "database_sync_token": "REC-CONS-EQUALPRO"
+  },
+  {
+    "category": "Constitutional Law",
+    "sub_topic_module_tag": "First Amendment Religion",
+    "core_pure_recall_doctrine": "The Establishment Clause (Government Displays, Financial Aid, School Contexts)",
+    "database_sync_token": "REC-CONS-FIRSTAME"
+  },
+  {
+    "category": "Constitutional Law",
+    "sub_topic_module_tag": "First Amendment Religion",
+    "core_pure_recall_doctrine": "The Free Exercise Clause (Religious Belief Protections vs. Neutral Laws)",
+    "database_sync_token": "REC-CONS-FIRSTAME"
+  },
+  {
+    "category": "Constitutional Law",
+    "sub_topic_module_tag": "First Amendment Speech",
+    "core_pure_recall_doctrine": "Content-Based Regulation of Protected Expression (Strict Scrutiny Baselines)",
+    "database_sync_token": "REC-CONS-FIRSTAME"
+  },
+  {
+    "category": "Constitutional Law",
+    "sub_topic_module_tag": "First Amendment Speech",
+    "core_pure_recall_doctrine": "Content-Neutral Regulation & Forum Designations (Time, Place, Manner & Public vs. Nonpublic Fora)",
+    "database_sync_token": "REC-CONS-FIRSTAME"
+  },
+  {
+    "category": "Constitutional Law",
+    "sub_topic_module_tag": "First Amendment Speech",
+    "core_pure_recall_doctrine": "Regulation of Expressive Conduct (Symbolic Speech Boundaries)",
+    "database_sync_token": "REC-CONS-FIRSTAME"
+  },
+  {
+    "category": "Constitutional Law",
+    "sub_topic_module_tag": "First Amendment Speech",
+    "core_pure_recall_doctrine": "Regulation of Unprotected Expression (Fighting Words, Obscenity, Incitement, Defamation)",
+    "database_sync_token": "REC-CONS-FIRSTAME"
+  },
+  {
+    "category": "Constitutional Law",
+    "sub_topic_module_tag": "First Amendment Speech",
+    "core_pure_recall_doctrine": "Regulation of Commercial Speech (Commercial Advertising and Structural Safeguards)",
+    "database_sync_token": "REC-CONS-FIRSTAME"
+  },
+  {
+    "category": "Contracts",
+    "sub_topic_module_tag": "Governing Law",
+    "core_pure_recall_doctrine": "Identification of Governing Law (Common Law vs. UCC Article 2 Rules)",
+    "database_sync_token": "REC-CONT-GOVERNIN"
+  },
+  {
+    "category": "Contracts",
+    "sub_topic_module_tag": "Contract Formation",
+    "core_pure_recall_doctrine": "Manifestation of Assent (Mutual Assent / Offer & Acceptance Core Rules)",
+    "database_sync_token": "REC-CONT-CONTRACT"
+  },
+  {
+    "category": "Contracts",
+    "sub_topic_module_tag": "Contract Formation",
+    "core_pure_recall_doctrine": "Acceptance Rules (Bilateral vs. Unilateral Performance Protocols)",
+    "database_sync_token": "REC-CONT-CONTRACT"
+  },
+  {
+    "category": "Contracts",
+    "sub_topic_module_tag": "Contract Formation",
+    "core_pure_recall_doctrine": "Consideration Requirements (Bargained-For Exchange, Preexisting Duties, Forbearance)",
+    "database_sync_token": "REC-CONT-CONTRACT"
+  },
+  {
+    "category": "Contracts",
+    "sub_topic_module_tag": "Contract Formation",
+    "core_pure_recall_doctrine": "Obligations Enforceable Without Consideration (Promissory Estoppel & Restitution)",
+    "database_sync_token": "REC-CONT-CONTRACT"
+  },
+  {
+    "category": "Contracts",
+    "sub_topic_module_tag": "Contract Formation",
+    "core_pure_recall_doctrine": "Modification of Contracts (Common Law Consideration vs. UCC Good Faith Defaults)",
+    "database_sync_token": "REC-CONT-CONTRACT"
+  },
+  {
+    "category": "Contracts",
+    "sub_topic_module_tag": "Defenses",
+    "core_pure_recall_doctrine": "Statute of Frauds: Contracts Covered (MYLEGS Categories)",
+    "database_sync_token": "REC-CONT-DEFENSES"
+  },
+  {
+    "category": "Contracts",
+    "sub_topic_module_tag": "Defenses",
+    "core_pure_recall_doctrine": "Statute of Frauds under the UCC (Writing Substitutes and Statutory Exceptions)",
+    "database_sync_token": "REC-CONT-DEFENSES"
+  },
+  {
+    "category": "Contracts",
+    "sub_topic_module_tag": "Contract Content",
+    "core_pure_recall_doctrine": "Omitted and Implied Terms (Gap-Filling under Common Law & UCC)",
+    "database_sync_token": "REC-CONT-CONTRACT"
+  },
+  {
+    "category": "Contracts",
+    "sub_topic_module_tag": "Performance Metrics",
+    "core_pure_recall_doctrine": "Express and Constructive Conditions (Nonoccurrence, Excuse, and Satisfaction Standards)",
+    "database_sync_token": "REC-CONT-PERFORMA"
+  },
+  {
+    "category": "Contracts",
+    "sub_topic_module_tag": "Performance Metrics",
+    "core_pure_recall_doctrine": "Warranties and Disclaimers under the UCC (Implied Warranty of Merchantability & Fitness)",
+    "database_sync_token": "REC-CONT-PERFORMA"
+  },
+  {
+    "category": "Contracts",
+    "sub_topic_module_tag": "Breach & Discharge",
+    "core_pure_recall_doctrine": "Anticipatory Repudiation under Common Law and UCC (Retractions & Adequate Assurances)",
+    "database_sync_token": "REC-CONT-BREACHDI"
+  },
+  {
+    "category": "Contracts",
+    "sub_topic_module_tag": "Breach & Discharge",
+    "core_pure_recall_doctrine": "Excuse: Impossibility, Impracticability, Frustration of Purpose, & Risk of Loss Rules",
+    "database_sync_token": "REC-CONT-BREACHDI"
+  },
+  {
+    "category": "Contracts",
+    "sub_topic_module_tag": "Breach & Discharge",
+    "core_pure_recall_doctrine": "Discharge of Duties (Accord & Satisfaction, Substituted Contract, Novation, Rescission, Release)",
+    "database_sync_token": "REC-CONT-BREACHDI"
+  },
+  {
+    "category": "Contracts",
+    "sub_topic_module_tag": "Remedies",
+    "core_pure_recall_doctrine": "Expectation Interest (Direct, Incidental, and Consequential Damages Formulas)",
+    "database_sync_token": "REC-CONT-REMEDIES"
+  },
+  {
+    "category": "Contracts",
+    "sub_topic_module_tag": "Remedies",
+    "core_pure_recall_doctrine": "Damages Limitations: Causation, Certainty, and Foreseeability Benchmarks",
+    "database_sync_token": "REC-CONT-REMEDIES"
+  },
+  {
+    "category": "Contracts",
+    "sub_topic_module_tag": "Remedies",
+    "core_pure_recall_doctrine": "Specific Performance and Injunction Invocations",
+    "database_sync_token": "REC-CONT-REMEDIES"
+  },
+  {
+    "category": "Criminal Law & Protections",
+    "sub_topic_module_tag": "General Principles",
+    "core_pure_recall_doctrine": "Burdens of Proof and Persuasion (Presumption of Innocence vs. Probable Cause vs. Reasonable Doubt)",
+    "database_sync_token": "REC-CRIM-GENERALP"
+  },
+  {
+    "category": "Criminal Law & Protections",
+    "sub_topic_module_tag": "Fourth Amendment",
+    "core_pure_recall_doctrine": "Search Warrant and Exceptions (SILA, Automobile, Plain View, Consent, Exigent Circumstances)",
+    "database_sync_token": "REC-CRIM-FOURTHAM"
+  },
+  {
+    "category": "Criminal Law & Protections",
+    "sub_topic_module_tag": "Fourth Amendment",
+    "core_pure_recall_doctrine": "Seizure of Persons (Terry Stop Thresholds and Lawful Arrest Requirements)",
+    "database_sync_token": "REC-CRIM-FOURTHAM"
+  },
+  {
+    "category": "Criminal Law & Protections",
+    "sub_topic_module_tag": "Fourth Amendment",
+    "core_pure_recall_doctrine": "Exclusionary Rule and Exceptions (Fruits of Poisonous Tree, Good Faith, Inevitable Discovery)",
+    "database_sync_token": "REC-CRIM-FOURTHAM"
+  },
+  {
+    "category": "Criminal Law & Protections",
+    "sub_topic_module_tag": "Fourth Amendment",
+    "core_pure_recall_doctrine": "Standing to Object (Reasonable Expectation of Privacy Limits, Coconspirators, Third Parties)",
+    "database_sync_token": "REC-CRIM-FOURTHAM"
+  },
+  {
+    "category": "Criminal Law & Protections",
+    "sub_topic_module_tag": "Fifth Amendment",
+    "core_pure_recall_doctrine": "Triggering the Privilege Against Self-Incrimination (Testimonial vs. Nontestimonial Standard)",
+    "database_sync_token": "REC-CRIM-FIFTHAME"
+  },
+  {
+    "category": "Criminal Law & Protections",
+    "sub_topic_module_tag": "Fifth Amendment",
+    "core_pure_recall_doctrine": "Triggering Miranda Rights (Custody and Interrogation Thresholds)",
+    "database_sync_token": "REC-CRIM-FIFTHAME"
+  },
+  {
+    "category": "Criminal Law & Protections",
+    "sub_topic_module_tag": "Fifth Amendment",
+    "core_pure_recall_doctrine": "Adequacy of Miranda Warnings",
+    "database_sync_token": "REC-CRIM-FIFTHAME"
+  },
+  {
+    "category": "Criminal Law & Protections",
+    "sub_topic_module_tag": "Fifth Amendment",
+    "core_pure_recall_doctrine": "Invoking and Waiving Miranda Rights (Fifth vs. Sixth Amendment Right to Counsel Differences)",
+    "database_sync_token": "REC-CRIM-FIFTHAME"
+  },
+  {
+    "category": "Criminal Law & Protections",
+    "sub_topic_module_tag": "Sixth Amendment",
+    "core_pure_recall_doctrine": "Right to Counsel: Waiver of the Right to Counsel",
+    "database_sync_token": "REC-CRIM-SIXTHAME"
+  },
+  {
+    "category": "Criminal Law & Protections",
+    "sub_topic_module_tag": "Sixth Amendment",
+    "core_pure_recall_doctrine": "Right to Counsel: Ineffective Assistance of Counsel (Strickland Performance & Prejudice Prong)",
+    "database_sync_token": "REC-CRIM-SIXTHAME"
+  },
+  {
+    "category": "Evidence",
+    "sub_topic_module_tag": "Relevance Framework",
+    "core_pure_recall_doctrine": "Logical Relevance Baseline (Materiality and Probativeness under Rule 401/402)",
+    "database_sync_token": "REC-EVID-RELEVANC"
+  },
+  {
+    "category": "Evidence",
+    "sub_topic_module_tag": "Relevance Framework",
+    "core_pure_recall_doctrine": "Exclusion for Unfair Prejudice, Confusion, or Waste of Time (Rule 403 Balancing Test)",
+    "database_sync_token": "REC-EVID-RELEVANC"
+  },
+  {
+    "category": "Evidence",
+    "sub_topic_module_tag": "Character Evidence",
+    "core_pure_recall_doctrine": "Admissibility of Character Evidence (Propensity Bar Framework under Rule 404)",
+    "database_sync_token": "REC-EVID-CHARACTE"
+  },
+  {
+    "category": "Evidence",
+    "sub_topic_module_tag": "Character Evidence",
+    "core_pure_recall_doctrine": "Habit and Routine Practice Standards (Rule 406 Specificity)",
+    "database_sync_token": "REC-EVID-CHARACTE"
+  },
+  {
+    "category": "Evidence",
+    "sub_topic_module_tag": "Opinions & Experts",
+    "core_pure_recall_doctrine": "Lay Opinion Testimony Restrictions (Rule 701 Rules)",
+    "database_sync_token": "REC-EVID-OPINIONS"
+  },
+  {
+    "category": "Evidence",
+    "sub_topic_module_tag": "Opinions & Experts",
+    "core_pure_recall_doctrine": "Reliability of Expert Testimony (Daubert Standards / Rule 702 Framework)",
+    "database_sync_token": "REC-EVID-OPINIONS"
+  },
+  {
+    "category": "Evidence",
+    "sub_topic_module_tag": "Writing Mechanics",
+    "core_pure_recall_doctrine": "Foundation, Authentication, and Identification, including the Best Evidence Rule (Rule 901 & 1002)",
+    "database_sync_token": "REC-EVID-WRITINGM"
+  },
+  {
+    "category": "Evidence",
+    "sub_topic_module_tag": "Policy Exclusions",
+    "core_pure_recall_doctrine": "Spousal Immunity and Confidential Marital Communications Privileges",
+    "database_sync_token": "REC-EVID-POLICYEX"
+  },
+  {
+    "category": "Evidence",
+    "sub_topic_module_tag": "Policy Exclusions",
+    "core_pure_recall_doctrine": "Attorney-Client Privilege Scope and Work-Product Doctrine Shield",
+    "database_sync_token": "REC-EVID-POLICYEX"
+  },
+  {
+    "category": "Evidence",
+    "sub_topic_module_tag": "Hearsay Foundations",
+    "core_pure_recall_doctrine": "Definition of Hearsay (Out-of-Court Statements Offered for the Truth Asserted Rule 801)",
+    "database_sync_token": "REC-EVID-HEARSAYF"
+  },
+  {
+    "category": "Evidence",
+    "sub_topic_module_tag": "Hearsay Foundations",
+    "core_pure_recall_doctrine": "Statements That Are Not Hearsay: Declarant-Witness's Prior Statements",
+    "database_sync_token": "REC-EVID-HEARSAYF"
+  },
+  {
+    "category": "Evidence",
+    "sub_topic_module_tag": "Hearsay Foundations",
+    "core_pure_recall_doctrine": "Statements That Are Not Hearsay: Opposing Party's Statements & Admissions",
+    "database_sync_token": "REC-EVID-HEARSAYF"
+  },
+  {
+    "category": "Evidence",
+    "sub_topic_module_tag": "Hearsay Foundations",
+    "core_pure_recall_doctrine": "Right to Confront Witnesses (Sixth Amendment Confrontation Clause & Testimonial Hearsay Bounds)",
+    "database_sync_token": "REC-EVID-HEARSAYF"
+  },
+  {
+    "category": "Evidence",
+    "sub_topic_module_tag": "Hearsay Exceptions",
+    "core_pure_recall_doctrine": "Hearsay Exceptions (Declarant Available): Present Sense Impression and Excited Utterances",
+    "database_sync_token": "REC-EVID-HEARSAYE"
+  },
+  {
+    "category": "Evidence",
+    "sub_topic_module_tag": "Hearsay Exceptions",
+    "core_pure_recall_doctrine": "Hearsay Exceptions (Declarant Available): Statement of Then-Existing Mental, Emotional, or Physical Condition",
+    "database_sync_token": "REC-EVID-HEARSAYE"
+  },
+  {
+    "category": "Evidence",
+    "sub_topic_module_tag": "Hearsay Exceptions",
+    "core_pure_recall_doctrine": "Recorded Recollection (Rule 803(5))",
+    "database_sync_token": "REC-EVID-HEARSAYE"
+  },
+  {
+    "category": "Evidence",
+    "sub_topic_module_tag": "Hearsay Exceptions",
+    "core_pure_recall_doctrine": "Business Records & Absence of Business Records",
+    "database_sync_token": "REC-EVID-HEARSAYE"
+  },
+  {
+    "category": "Evidence",
+    "sub_topic_module_tag": "Hearsay Exceptions",
+    "core_pure_recall_doctrine": "Public Records and Reports / Absence of Public Records",
+    "database_sync_token": "REC-EVID-HEARSAYE"
+  },
+  {
+    "category": "Evidence",
+    "sub_topic_module_tag": "Hearsay Exceptions",
+    "core_pure_recall_doctrine": "Statement Against Interest (Rule 804(b)(3))",
+    "database_sync_token": "REC-EVID-HEARSAYE"
+  },
+  {
+    "category": "Evidence",
+    "sub_topic_module_tag": "Impeachment",
+    "core_pure_recall_doctrine": "Impeachment: Ability to Observe, Remember, or Relate Accurately",
+    "database_sync_token": "REC-EVID-IMPEACHM"
+  },
+  {
+    "category": "Evidence",
+    "sub_topic_module_tag": "Impeachment",
+    "core_pure_recall_doctrine": "Impeachment via Contradiction Mechanics",
+    "database_sync_token": "REC-EVID-IMPEACHM"
+  },
+  {
+    "category": "Evidence",
+    "sub_topic_module_tag": "Impeachment",
+    "core_pure_recall_doctrine": "Impeachment via Prior Inconsistent Statements and Conduct",
+    "database_sync_token": "REC-EVID-IMPEACHM"
+  },
+  {
+    "category": "Evidence",
+    "sub_topic_module_tag": "Impeachment",
+    "core_pure_recall_doctrine": "Impeachment via Bias and Interest Showing",
+    "database_sync_token": "REC-EVID-IMPEACHM"
+  },
+  {
+    "category": "Evidence",
+    "sub_topic_module_tag": "Impeachment",
+    "core_pure_recall_doctrine": "Impeachment with Convictions (Rule 609 Balancing Framework)",
+    "database_sync_token": "REC-EVID-IMPEACHM"
+  },
+  {
+    "category": "Real Property",
+    "sub_topic_module_tag": "Present Estates",
+    "core_pure_recall_doctrine": "Fee Simple Absolute (Conveyance Language and Basic Attributes)",
+    "database_sync_token": "REC-REAL-PRESENTE"
+  },
+  {
+    "category": "Real Property",
+    "sub_topic_module_tag": "Cotenancies",
+    "core_pure_recall_doctrine": "Joint Tenancy (Four Unities), Tenancy in Common, and Tenancy by the Entirety",
+    "database_sync_token": "REC-REAL-COTENANC"
+  },
+  {
+    "category": "Real Property",
+    "sub_topic_module_tag": "Cotenancies",
+    "core_pure_recall_doctrine": "Partition Remedies and Procedural Methods",
+    "database_sync_token": "REC-REAL-COTENANC"
+  },
+  {
+    "category": "Real Property",
+    "sub_topic_module_tag": "Cotenancies",
+    "core_pure_recall_doctrine": "Severance Mechanics (Conveyances, Liens, Mortgages, Leases effects)",
+    "database_sync_token": "REC-REAL-COTENANC"
+  },
+  {
+    "category": "Real Property",
+    "sub_topic_module_tag": "Landlord-Tenant",
+    "core_pure_recall_doctrine": "Leasehold Typologies: Tenancy for Years, Periodic, At Will, and At Sufferance Defaults",
+    "database_sync_token": "REC-REAL-LANDLORD"
+  },
+  {
+    "category": "Real Property",
+    "sub_topic_module_tag": "Discrimination",
+    "core_pure_recall_doctrine": "Fair Housing / Discrimination Rules (Fourteenth Amendment, Fair Housing Act, Restraints)",
+    "database_sync_token": "REC-REAL-DISCRIMI"
+  },
+  {
+    "category": "Real Property",
+    "sub_topic_module_tag": "Servitudes",
+    "core_pure_recall_doctrine": "Nature and Type of Easements and Licenses (Appurtenant vs. In Gross vs. License Distinction)",
+    "database_sync_token": "REC-REAL-SERVITUD"
+  },
+  {
+    "category": "Real Property",
+    "sub_topic_module_tag": "Servitudes",
+    "core_pure_recall_doctrine": "Creation of Easements and Licenses (Express, Implied Prior Use, Strict Necessity, Prescription)",
+    "database_sync_token": "REC-REAL-SERVITUD"
+  },
+  {
+    "category": "Real Property",
+    "sub_topic_module_tag": "Servitudes",
+    "core_pure_recall_doctrine": "Scope and Apportionment of Easements",
+    "database_sync_token": "REC-REAL-SERVITUD"
+  },
+  {
+    "category": "Real Property",
+    "sub_topic_module_tag": "Servitudes",
+    "core_pure_recall_doctrine": "Termination of Easements and Licenses (Unity, Release, Abandonment, Estoppel, Revocation)",
+    "database_sync_token": "REC-REAL-SERVITUD"
+  },
+  {
+    "category": "Real Property",
+    "sub_topic_module_tag": "Contracts",
+    "core_pure_recall_doctrine": "Remedies for Breach of Real Estate Contracts (Specific Performance, Part Performance, Damages)",
+    "database_sync_token": "REC-REAL-CONTRACT"
+  },
+  {
+    "category": "Real Property",
+    "sub_topic_module_tag": "Contracts",
+    "core_pure_recall_doctrine": "Marketability of Title Standards (Chain Defects, Encumbrances, Timing, Merger Defenses)",
+    "database_sync_token": "REC-REAL-CONTRACT"
+  },
+  {
+    "category": "Real Property",
+    "sub_topic_module_tag": "Mortgages",
+    "core_pure_recall_doctrine": "Mortgage Theories: Title, Lien, and Intermediate Theory Frameworks",
+    "database_sync_token": "REC-REAL-MORTGAGE"
+  },
+  {
+    "category": "Real Property",
+    "sub_topic_module_tag": "Recording Acts",
+    "core_pure_recall_doctrine": "Types of Recording Acts (Notice Statutes vs. Race Statutes vs. Race-Notice Statutes Protected Classes)",
+    "database_sync_token": "REC-REAL-RECORDIN"
+  },
+  {
+    "category": "Torts",
+    "sub_topic_module_tag": "Intentional Defenses",
+    "core_pure_recall_doctrine": "Intentional Tort Defenses: Consent Limitations (Actual vs. Apparent Scope)",
+    "database_sync_token": "REC-TORT-INTENTIO"
+  },
+  {
+    "category": "Torts",
+    "sub_topic_module_tag": "Negligence Duties",
+    "core_pure_recall_doctrine": "Nonfeasance and Affirmative Duties of Care (Special Relationships & Voluntary Undertakings)",
+    "database_sync_token": "REC-TORT-NEGLIGEN"
+  },
+  {
+    "category": "Torts",
+    "sub_topic_module_tag": "Negligence Standard",
+    "core_pure_recall_doctrine": "The Reasonably Prudent Person Standard (Applications to Children, Professionals, Emergencies)",
+    "database_sync_token": "REC-TORT-NEGLIGEN"
+  },
+  {
+    "category": "Torts",
+    "sub_topic_module_tag": "Causation",
+    "core_pure_recall_doctrine": "Actual Causation (But-For Test vs. Substantial Factor vs. Multiple Sufficient Causes)",
+    "database_sync_token": "REC-TORT-CAUSATIO"
+  },
+  {
+    "category": "Torts",
+    "sub_topic_module_tag": "Causation",
+    "core_pure_recall_doctrine": "Proximate Causation (Foreseeability Boundaries, Scope of Risk, and Superseding Causes)",
+    "database_sync_token": "REC-TORT-CAUSATIO"
+  },
+  {
+    "category": "Torts",
+    "sub_topic_module_tag": "Strict Liability",
+    "core_pure_recall_doctrine": "Common-Law Strict Liability for Abnormally Dangerous Activities & Inherent Risk Defenses",
+    "database_sync_token": "REC-TORT-STRICTLI"
+  },
+  {
+    "category": "Torts",
+    "sub_topic_module_tag": "Products Liability",
+    "core_pure_recall_doctrine": "Products Liability: Design, Manufacture, and Distribution Defects & Defenses",
+    "database_sync_token": "REC-TORT-PRODUCTS"
+  },
+  {
+    "category": "Torts",
+    "sub_topic_module_tag": "Nuisance",
+    "core_pure_recall_doctrine": "Private Nuisance Elements (Unreasonable Interference with Use/Enjoyment & Locality Rules)",
+    "database_sync_token": "REC-TORT-NUISANCE"
+  },
+  {
+    "category": "Professional Responsibility",
+    "sub_topic_module_tag": "Terminology",
+    "core_pure_recall_doctrine": "MRPC Rule 1.0: Definitions of key terms used throughout the rules, including \"informed consent,\" \"confirmed in writing,\" and \"screened\".",
+    "database_sync_token": "REC-MRPC-10"
+  },
+  {
+    "category": "Professional Responsibility",
+    "sub_topic_module_tag": "Competence",
+    "core_pure_recall_doctrine": "MRPC Rule 1.1: Lawyer duty to provide competent representation, including legal knowledge, skill, thoroughness, and preparation reasonably necessary for the representation.",
+    "database_sync_token": "REC-MRPC-11"
+  },
+  {
+    "category": "Professional Responsibility",
+    "sub_topic_module_tag": "Scope of Representation",
+    "core_pure_recall_doctrine": "MRPC Rule 1.2(a), (d): Allocation of authority between client and lawyer, objectives vs. means, and prohibition on counseling or assisting client in conduct the lawyer knows is criminal or fraudulent.",
+    "database_sync_token": "REC-MRPC-12"
+  },
+  {
+    "category": "Professional Responsibility",
+    "sub_topic_module_tag": "Diligence",
+    "core_pure_recall_doctrine": "MRPC Rule 1.3: Lawyer duty to act with reasonable diligence and promptness in representing a client.",
+    "database_sync_token": "REC-MRPC-13"
+  },
+  {
+    "category": "Professional Responsibility",
+    "sub_topic_module_tag": "Communications",
+    "core_pure_recall_doctrine": "MRPC Rule 1.4: Duties to keep the client reasonably informed, consult about means, promptly comply with reasonable requests for information, and explain matters to permit informed decisions.",
+    "database_sync_token": "REC-MRPC-14"
+  },
+  {
+    "category": "Professional Responsibility",
+    "sub_topic_module_tag": "Confidentiality of Information",
+    "core_pure_recall_doctrine": "MRPC Rule 1.6(a), (c): General duty not to reveal information relating to representation without informed consent or applicable exception, and duty to make reasonable efforts to prevent inadvertent or unauthorized disclosure.",
+    "database_sync_token": "REC-MRPC-16"
+  },
+  {
+    "category": "Professional Responsibility",
+    "sub_topic_module_tag": "Current-Client Conflicts",
+    "core_pure_recall_doctrine": "MRPC Rule 1.7: General rule prohibiting representation of clients with directly adverse interests or significant risk of material limitation, and conditions for informed-consent waivers.",
+    "database_sync_token": "REC-MRPC-17"
+  },
+  {
+    "category": "Professional Responsibility",
+    "sub_topic_module_tag": "Meritorious Claims and Contentions",
+    "core_pure_recall_doctrine": "MRPC Rule 3.1: Requirement that claims and contentions have a basis in law and fact and are not frivolous, including good-faith arguments for extension, modification, or reversal of existing law.",
+    "database_sync_token": "REC-MRPC-31"
+  },
+  {
+    "category": "Professional Responsibility",
+    "sub_topic_module_tag": "Candor Toward the Tribunal",
+    "core_pure_recall_doctrine": "MRPC Rule 3.3(a)(1)-(2): Prohibitions on knowingly making false statements of fact or law to a tribunal or failing to correct such statements, and on failing to disclose controlling adverse legal authority not disclosed by opposing counsel.",
+    "database_sync_token": "REC-MRPC-33"
+  },
+  {
+    "category": "Professional Responsibility",
+    "sub_topic_module_tag": "Truthfulness in Statements to Others",
+    "core_pure_recall_doctrine": "MRPC Rule 4.1: Prohibition on knowingly making false statements of material fact or law to third persons or failing to disclose material facts when necessary to avoid assisting a criminal or fraudulent act.",
+    "database_sync_token": "REC-MRPC-41"
+  },
+  {
+    "category": "Professional Responsibility",
+    "sub_topic_module_tag": "Communication with Represented Persons",
+    "core_pure_recall_doctrine": "MRPC Rule 4.2: Prohibition on communicating about the subject of the representation with a person the lawyer knows to be represented by another lawyer in the matter, absent consent or legal authorization.",
+    "database_sync_token": "REC-MRPC-42"
+  },
+  {
+    "category": "Professional Responsibility",
+    "sub_topic_module_tag": "Dealing with Unrepresented Persons",
+    "core_pure_recall_doctrine": "MRPC Rule 4.3: Duties when dealing with unrepresented persons, including clarifying the lawyer’s role and avoiding implying disinterest or giving legal advice when interests conflict.",
+    "database_sync_token": "REC-MRPC-43"
+  }
+]

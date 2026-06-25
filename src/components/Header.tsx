@@ -1,9 +1,14 @@
+"use client";
+
 import Link from "next/link";
 import { BookOpen } from "lucide-react";
+import { useState } from "react";
+import SubscribeModal from "./SubscribeModal";
 import styles from "./Header.module.css";
 import clsx from "clsx";
 
 export default function Header() {
+  const [isSubscribeOpen, setIsSubscribeOpen] = useState(false);
   return (
     <header className={clsx(styles.header, "glass")}>
       <Link href="/" className={styles.logo}>
@@ -18,10 +23,11 @@ export default function Header() {
         <Link href="/dashboard" className={styles.navLink}>
           Dashboard
         </Link>
-        <button className={styles.btnSubscribe}>
+        <button className={styles.btnSubscribe} onClick={() => setIsSubscribeOpen(true)}>
           Subscribe
         </button>
       </nav>
+      {isSubscribeOpen && <SubscribeModal onClose={() => setIsSubscribeOpen(false)} />}
     </header>
   );
 }
