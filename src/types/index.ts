@@ -5,5 +5,6 @@ export interface Topic {
   trigger: string;
   notes: string;
   date: string;
+  commonVsModern?: string;
   mastered?: boolean;
 }
