@@ -67,24 +67,29 @@
   box-shadow: 0 0 0 3px hsla(230, 80%, 55%, 0.1);
 }
 
-.filterBtn {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 1.25rem 1.5rem;
+.filterSelect {
+  padding: 1.25rem 3rem 1.25rem 1.5rem;
   border-radius: var(--radius-lg);
   border: 1px solid var(--border-color);
   background: var(--bg-card);
   font-weight: 600;
   color: var(--text-primary);
+  font-family: inherit;
+  font-size: 1rem;
   transition: all 0.2s ease;
   box-shadow: var(--shadow-sm);
+  cursor: pointer;
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  background-size: 1em;
 }
 
-.filterBtn:hover {
+.filterSelect:hover, .filterSelect:focus {
   border-color: var(--accent-primary);
   color: var(--accent-primary);
-  background: hsla(230, 80%, 55%, 0.05);
+  outline: none;
 }
 
 .topicsSection {

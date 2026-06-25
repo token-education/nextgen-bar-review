@@ -22,12 +22,24 @@ export default function Home() {
   const [searchQuery, setSearchQuery] = useState("");
   const [isChatOpen, setIsChatOpen] = useState(false);
 
+  const [currentFilter, setCurrentFilter] = useState("All Subjects");
+
+  const uniqueSubjects = ["All Subjects", ...Array.from(new Set(topics.map(t => t.subject)))].sort();
+
   const unmasteredTopics = topics.filter(t => !t.mastered);
 
-  const filteredTopics = topics.filter(t => 
-    t.rule.toLowerCase().includes(searchQuery.toLowerCase()) || 
-    t.subject.toLowerCase().includes(searchQuery.toLowerCase())
-  );
+  const filteredTopics = topics.filter(t => {
+    const query = searchQuery.toLowerCase();
+    const matchesSearch = 
+      t.rule.toLowerCase().includes(query) || 
+      t.subject.toLowerCase().includes(query) ||
+      (t.trigger && t.trigger.toLowerCase().includes(query)) ||
+      (t.notes && t.notes.toLowerCase().includes(query));
+      
+    const matchesFilter = currentFilter === "All Subjects" || t.subject === currentFilter;
+    
+    return matchesSearch && matchesFilter;
+  });
 
   const handleToggleMastered = (id: number) => {
     setTopics(topics.map(t => t.id === id ? { ...t, mastered: !t.mastered } : t));
@@ -68,10 +80,15 @@ export default function Home() {
               onChange={(e) => setSearchQuery(e.target.value)}
             />
           </div>
-          <button className={styles.filterBtn}>
-            <Filter size={20} />
-            Filter by Subject
-          </button>
+          <select 
+            className={styles.filterSelect}
+            value={currentFilter}
+            onChange={(e) => setCurrentFilter(e.target.value)}
+          >
+            {uniqueSubjects.map(sub => (
+              <option key={sub} value={sub}>{sub}</option>
+            ))}
+          </select>
         </section>
 
         <section className={styles.topicsSection}>
