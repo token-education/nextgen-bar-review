@@ -25,7 +25,7 @@ export default function Home() {
 
   const [currentFilter, setCurrentFilter] = useState("All Subjects");
 
-  const uniqueSubjects = ["All Subjects", ...Array.from(new Set(topics.map(t => t.subject)))].sort();
+  const uniqueSubjects = ["All Subjects", ...Array.from(new Set(topics.map(t => parseSubject(t.subject).main)))].sort();
 
   const unmasteredTopics = topics.filter(t => !t.mastered);
 
@@ -37,7 +37,7 @@ export default function Home() {
       (t.trigger && t.trigger.toLowerCase().includes(query)) ||
       (t.notes && t.notes.toLowerCase().includes(query));
       
-    const matchesFilter = currentFilter === "All Subjects" || t.subject === currentFilter;
+    const matchesFilter = currentFilter === "All Subjects" || parseSubject(t.subject).main === currentFilter;
     
     return matchesSearch && matchesFilter;
   });
